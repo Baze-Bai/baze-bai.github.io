@@ -1,0 +1,878 @@
+{
+  "projects": [
+    {
+      "id": "zillusion",
+      "title": "Zillusion",
+      "subtitle": "Agentic data discovery and collection",
+      "category": "AI systems",
+      "type": "Personal project",
+      "members": [
+        "Zillusion"
+      ],
+      "summary": "A full-stack platform that turns a natural-language data request into ranked sources, validated collection workflows, and reusable datasets.",
+      "problem": "Finding a useful data source and validating its extracted fields often takes more work than the analysis itself.",
+      "implementation": "Connects source discovery, browser exploration, workflow generation, separate validation, and downstream data processing through an agent workflow and a web workbench.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "LangGraph",
+        "Claude Agent SDK",
+        "Playwright",
+        "PostgreSQL",
+        "Redis",
+        "Qdrant",
+        "Next.js",
+        "TypeScript",
+        "Docker"
+      ],
+      "bullets": [
+        {
+          "text": "Built an agentic data platform connecting natural-language requirements, source ranking, browser exploration, and generated collection workflows using FastAPI, LangGraph, and Playwright.",
+          "skills": [
+            "python",
+            "fastapi",
+            "agents",
+            "langgraph",
+            "playwright",
+            "data pipelines"
+          ]
+        },
+        {
+          "text": "Integrated separate workflow validation, PostgreSQL storage, Redis-backed tasks, and a Next.js workbench with streamed execution events.",
+          "skills": [
+            "evaluation",
+            "postgresql",
+            "redis",
+            "next.js",
+            "typescript",
+            "sse",
+            "backend"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Zillusion · GitHub",
+          "url": "https://github.com/Baze-Bai/Zillusion",
+          "member": "Zillusion",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "evolution",
+      "title": "Evolution",
+      "subtitle": "Agents for software testing and repair",
+      "category": "AI systems",
+      "type": "Personal project",
+      "members": [
+        "Evolution_Zillusion"
+      ],
+      "summary": "An automated test, diagnosis, repair, and integration loop for a service-based AI application.",
+      "problem": "An AI application can return technically valid responses while still failing the user's task.",
+      "implementation": "Runs functional and boundary-testing pipelines, separates result evaluation from code repair, and combines HTTP traces, streamed events, logs, and Git changes for iterative integration.",
+      "technologies": [
+        "Python",
+        "asyncio",
+        "Claude Code CLI",
+        "httpx",
+        "SSE",
+        "Git",
+        "Docker Compose",
+        "pytest"
+      ],
+      "bullets": [
+        {
+          "text": "Developed parallel functional and boundary-testing pipelines with asyncio, separating user-facing result evaluation from developer-agent diagnosis and code repair.",
+          "skills": [
+            "python",
+            "asyncio",
+            "agents",
+            "evaluation",
+            "testing"
+          ]
+        },
+        {
+          "text": "Combined HTTP traces, SSE events, and service logs to drive repair iterations, Git commits, and periodic integration across isolated working copies.",
+          "skills": [
+            "observability",
+            "sse",
+            "git",
+            "backend",
+            "testing"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Evolution · GitHub",
+          "url": "https://github.com/Baze-Bai/Evolution",
+          "member": "Evolution_Zillusion",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "outreach",
+      "title": "AI outreach and social operations",
+      "subtitle": "LinkedIn AI and Xiaohongshu integrations",
+      "category": "AI systems",
+      "type": "Personal project group",
+      "members": [
+        "Linkedin AI",
+        "Openclaw_小红书",
+        "AI Rednote / 小红书搜索自动化"
+      ],
+      "summary": "Related projects for lead discovery, qualification, messaging workflows, and scheduled social content.",
+      "problem": "Lead qualification and social operations involve repeated research, context collection, and channel-specific execution.",
+      "implementation": "Extends a LinkedIn outreach system with an email channel, operator controls, and personalized messages; pairs it with OpenClaw integrations and Rednote search experiments. These are related projects rather than a single shared codebase.",
+      "technologies": [
+        "Python",
+        "Django",
+        "Playwright",
+        "FastEmbed",
+        "scikit-learn",
+        "Gaussian processes",
+        "SMTP/IMAP",
+        "Docker",
+        "PowerShell",
+        "OpenClaw"
+      ],
+      "bullets": [
+        {
+          "text": "Extended a Django and Playwright outreach system with an SMTP/IMAP email channel, personalized connection notes, campaign controls, and an operator console.",
+          "skills": [
+            "python",
+            "django",
+            "playwright",
+            "backend",
+            "llm",
+            "automation"
+          ]
+        },
+        {
+          "text": "Integrated OpenClaw-based Xiaohongshu operations with container orchestration, health supervision, content generation, and scheduled publishing; explored Rednote search automation.",
+          "skills": [
+            "python",
+            "docker",
+            "agents",
+            "automation",
+            "observability"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "LinkedIn AI · GitHub",
+          "url": "https://github.com/Baze-Bai/LinkedIn-AI",
+          "member": "Linkedin AI",
+          "visibility": "public"
+        },
+        {
+          "label": "OpenClaw / Xiaohongshu · GitHub",
+          "url": "https://github.com/Baze-Bai/OpenClaw-Xiaohongshu",
+          "member": "Openclaw_小红书",
+          "visibility": "public"
+        },
+        {
+          "label": "AI Rednote · GitHub",
+          "url": "https://github.com/Baze-Bai/AI-Rednote",
+          "member": "AI Rednote / 小红书搜索自动化",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "literature-rag",
+      "title": "Multimodal literature RAG",
+      "subtitle": "Hybrid retrieval across document content",
+      "category": "AI systems",
+      "type": "Personal project",
+      "members": [
+        "通用文献多模态 RAG"
+      ],
+      "summary": "Retrieval over text, equations, tables, and figures in literature documents, with PDF as the current primary input and ESG papers as example material.",
+      "problem": "Important evidence in a document often lives in a figure, table, or equation rather than a paragraph.",
+      "implementation": "Combines structured PDF parsing and traceable semantic chunks with dense retrieval, SPLADE, BM25, reciprocal rank fusion, and vision-language descriptions of visual content.",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "Transformers",
+        "MinerU",
+        "PyMuPDF",
+        "FAISS",
+        "SPLADE",
+        "BM25",
+        "RRF",
+        "Qwen2-VL",
+        "OCR"
+      ],
+      "bullets": [
+        {
+          "text": "Implemented a multimodal PDF retrieval pipeline that parses text, equations, tables, and figures into semantic chunks with document and page metadata.",
+          "skills": [
+            "python",
+            "rag",
+            "pdf",
+            "multimodal",
+            "ocr",
+            "data pipelines"
+          ]
+        },
+        {
+          "text": "Combined FAISS dense retrieval, SPLADE, BM25, and reciprocal rank fusion, using Qwen2-VL descriptions to make tables and figures searchable.",
+          "skills": [
+            "rag",
+            "faiss",
+            "splade",
+            "bm25",
+            "rrf",
+            "transformers",
+            "multimodal",
+            "pytorch"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Multimodal literature RAG · GitHub",
+          "url": "https://github.com/Baze-Bai/Multimodal-Literature-RAG",
+          "member": "通用文献多模态 RAG",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "creator-automation",
+      "title": "Creator discovery and messaging",
+      "subtitle": "TikTok and Douyin automation",
+      "category": "AI systems",
+      "type": "Personal project group",
+      "members": [
+        "TikTok 主播采集与 AI 私信工具",
+        "AI Douyin 自动化工具"
+      ],
+      "summary": "Browser automation and operator tools for creator discovery, content analysis, and contextual outreach.",
+      "problem": "Creator research requires repetitive browsing, candidate filtering, and message preparation across platform interfaces.",
+      "implementation": "Uses Playwright and Flask for collection and messaging workflows, Qwen for contextual message generation, CSV exchange, task progress tracking, and packaged desktop delivery. Douyin is a separate implementation within the same experience group.",
+      "technologies": [
+        "Python",
+        "Playwright",
+        "Flask",
+        "pandas",
+        "Qwen",
+        "CSV",
+        "PyInstaller",
+        "HTML"
+      ],
+      "bullets": [
+        {
+          "text": "Built a Flask and Playwright creator-discovery workflow with CSV-based candidate handling, task progress reporting, and Qwen-assisted contextual messaging.",
+          "skills": [
+            "python",
+            "flask",
+            "playwright",
+            "llm",
+            "automation",
+            "backend"
+          ]
+        },
+        {
+          "text": "Delivered packaged operator tools with PyInstaller and developed a related Douyin collection and content-analysis application.",
+          "skills": [
+            "python",
+            "automation",
+            "deployment",
+            "data pipelines"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "TikTok creator tools · GitHub",
+          "url": "https://github.com/Baze-Bai/TikTok-Creator-Discovery-and-Messaging",
+          "member": "TikTok 主播采集与 AI 私信工具",
+          "visibility": "public"
+        },
+        {
+          "label": "AI Douyin · GitHub",
+          "url": "https://github.com/Baze-Bai/AI-Douyin",
+          "member": "AI Douyin 自动化工具",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "storycast",
+      "title": "Storycast",
+      "subtitle": "AI podcast generation backend",
+      "category": "AI systems",
+      "type": "Personal project",
+      "members": [
+        "Storycast AI 播客生成后端"
+      ],
+      "summary": "A backend that connects web research, dialogue generation, speech synthesis, and podcast asset delivery.",
+      "problem": "Generating a podcast requires coordinating information gathering, scripting, audio generation, and application services.",
+      "implementation": "Combines an Express API for authentication and podcast resources with Python search and script generation, Bark speech synthesis, audio composition, and Azure Blob uploads.",
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT",
+        "Python",
+        "OpenAI API",
+        "Perplexity",
+        "Bark",
+        "PyTorch",
+        "Azure Blob Storage"
+      ],
+      "bullets": [
+        {
+          "text": "Built an Express and MongoDB backend for authentication, podcast categories, and media resources, integrating Python research and dialogue-generation workflows.",
+          "skills": [
+            "typescript",
+            "node.js",
+            "express",
+            "mongodb",
+            "backend",
+            "python",
+            "llm"
+          ]
+        },
+        {
+          "text": "Connected Bark text-to-speech, audio composition, and Azure Blob Storage to turn generated dialogue into stored podcast assets.",
+          "skills": [
+            "python",
+            "pytorch",
+            "tts",
+            "azure",
+            "generative media",
+            "data pipelines"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Storycast · GitHub",
+          "url": "https://github.com/Baze-Bai/Storycast-AI-Podcast-Backend",
+          "member": "Storycast AI 播客生成后端",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "battery-health",
+      "title": "Battery health and feature engineering",
+      "subtitle": "EIS, equivalent circuits, and temperature transfer",
+      "category": "Research",
+      "type": "Personal research and course project group",
+      "members": [
+        "锂离子电池 EIS/ECM 与跨温度 SOH/RUL 预测",
+        "Duke：锂电池 ECM 特征数据集生成器"
+      ],
+      "summary": "Research and data tooling that turn electrochemical impedance measurements into interpretable features for battery health prediction.",
+      "problem": "Battery measurements change across temperatures and operating conditions, making health models difficult to transfer.",
+      "implementation": "Fits equivalent-circuit parameters to EIS data, builds reusable feature datasets, and studies LSTM baselines and domain-adversarial transfer for cross-condition SOH prediction, with related RUL experiments.",
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "Keras",
+        "SciPy",
+        "impedance.py",
+        "pandas",
+        "scikit-learn",
+        "LSTM",
+        "Domain adaptation",
+        "MATLAB"
+      ],
+      "bullets": [
+        {
+          "text": "Built an EIS-to-feature pipeline using nonlinear equivalent-circuit fitting, SciPy, and impedance.py, and packaged a dataset generator for battery-health analysis.",
+          "skills": [
+            "python",
+            "scipy",
+            "pandas",
+            "data pipelines",
+            "battery",
+            "statistics"
+          ]
+        },
+        {
+          "text": "Studied cross-temperature SOH prediction with LSTM baselines and domain-adversarial transfer, comparing feature relationships and model behavior across operating conditions.",
+          "skills": [
+            "tensorflow",
+            "lstm",
+            "domain adaptation",
+            "time series",
+            "battery",
+            "evaluation",
+            "research"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "EIS / SOH research · GitHub",
+          "url": "https://github.com/Baze-Bai/Battery-EIS-ECM-SOH-RUL",
+          "member": "锂离子电池 EIS/ECM 与跨温度 SOH/RUL 预测",
+          "visibility": "public"
+        },
+        {
+          "label": "ECM dataset generator · GitHub",
+          "url": "https://github.com/Baze-Bai/Battery-ECM-Dataset-Generator",
+          "member": "Duke：锂电池 ECM 特征数据集生成器",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "neural-kalman",
+      "title": "Neural-Kalman navigation",
+      "subtitle": "GNSS and inertial sensor fusion",
+      "category": "Research",
+      "type": "Research reproduction and extension",
+      "members": [
+        "Neural-Kalman GNSS/INS 精准农业导航复现与扩展"
+      ],
+      "summary": "Reproduction and extension work on neural-inertial navigation for agricultural robots with intermittent GPS updates.",
+      "problem": "Agricultural robots need position estimates even when satellite measurements are sparse or unavailable.",
+      "implementation": "Studies learned motion estimation and Kalman fusion using IMU and GNSS, comparing neural and EKF/UKF baselines and working with video-to-IMU alignment tools from the upstream research ecosystem.",
+      "technologies": [
+        "Python",
+        "TensorFlow",
+        "NumPy",
+        "SciPy",
+        "MATLAB",
+        "Kalman filters",
+        "EKF",
+        "UKF",
+        "LSTM",
+        "TCN"
+      ],
+      "bullets": [
+        {
+          "text": "Reproduced neural-inertial navigation workflows combining high-rate IMU sequences with intermittent GNSS measurements for agricultural robot localization.",
+          "skills": [
+            "python",
+            "tensorflow",
+            "robotics",
+            "sensor fusion",
+            "time series",
+            "research"
+          ]
+        },
+        {
+          "text": "Explored neural motion estimation and Kalman correction against EKF, UKF, and neural-inertial baselines, with tools for video and IMU alignment.",
+          "skills": [
+            "kalman",
+            "robotics",
+            "sensor fusion",
+            "evaluation",
+            "research"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Reproduction workspace · GitHub",
+          "url": "https://github.com/Baze-Bai/Neural-Kalman-Navigation",
+          "member": "Neural-Kalman GNSS/INS 精准农业导航复现与扩展",
+          "visibility": "public"
+        },
+        {
+          "label": "Upstream research · GitHub",
+          "url": "https://github.com/nesl/agrobot",
+          "visibility": "public",
+          "kind": "upstream"
+        }
+      ]
+    },
+    {
+      "id": "animagine",
+      "title": "Animagine video pipeline",
+      "subtitle": "Text to images, speech, and composed video",
+      "category": "AI systems",
+      "type": "Personal experiment",
+      "members": [
+        "Animagine AI 视频生成流水线"
+      ],
+      "summary": "An experimental pipeline that coordinates text parsing, diffusion image generation, speech synthesis, and video composition.",
+      "problem": "A text-to-video workflow needs consistent intermediate representations across generation and media tools.",
+      "implementation": "Parses text into structured scene information, generates Animagine images, synthesizes speech, and assembles media through separate parsing, image, TTS, and composition modules.",
+      "technologies": [
+        "Python",
+        "Jupyter",
+        "Animagine",
+        "Diffusion models",
+        "TTS",
+        "JSON",
+        "Audio and video composition"
+      ],
+      "bullets": [
+        {
+          "text": "Developed an experimental text-to-video pipeline connecting structured scene parsing, Animagine diffusion images, speech synthesis, and media composition.",
+          "skills": [
+            "python",
+            "diffusion",
+            "tts",
+            "generative media",
+            "multimodal",
+            "data pipelines"
+          ]
+        },
+        {
+          "text": "Separated text parsing, image generation, TTS, and video assembly into reusable modules with example applications and test scripts.",
+          "skills": [
+            "python",
+            "testing",
+            "generative media",
+            "automation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Animagine pipeline · GitHub",
+          "url": "https://github.com/Baze-Bai/Animagine-Video-Pipeline",
+          "member": "Animagine AI 视频生成流水线",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "rlhf",
+      "title": "RLHF pipeline",
+      "subtitle": "SFT, reward modeling, and PPO",
+      "category": "Applied ML / DL",
+      "type": "Personal research project",
+      "members": [
+        "RLHF pipeline"
+      ],
+      "summary": "A compact language-model alignment pipeline with supervised fine-tuning, preference learning, and a custom PPO implementation.",
+      "problem": "A reward score alone does not show whether a language model has learned the desired behavior or exploited the reward model.",
+      "implementation": "Uses distilGPT-2 for preference generation, supervised fine-tuning, pairwise reward modeling, and sequence-level PPO; compares training variants, out-of-distribution behavior, and reward hacking.",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "Transformers",
+        "SFT",
+        "Reward models",
+        "PPO",
+        "KL regularization",
+        "NumPy",
+        "Matplotlib"
+      ],
+      "bullets": [
+        {
+          "text": "Implemented a distilGPT-2 alignment pipeline covering supervised fine-tuning, pairwise reward-model training, and custom sequence-level PPO with KL regularization.",
+          "skills": [
+            "python",
+            "pytorch",
+            "transformers",
+            "rlhf",
+            "sft",
+            "ppo",
+            "reward modeling",
+            "reinforcement learning"
+          ]
+        },
+        {
+          "text": "Compared base and aligned model variants with reward analysis, out-of-distribution evaluation, and reward-hacking checks.",
+          "skills": [
+            "evaluation",
+            "rlhf",
+            "research",
+            "reinforcement learning"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "RLHF pipeline · GitHub",
+          "url": "https://github.com/Baze-Bai/RLHF-Pipeline",
+          "member": "RLHF pipeline",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "recommender",
+      "title": "Two-tower hotel recommendation",
+      "subtitle": "540_reconmend_system",
+      "category": "Applied ML / DL",
+      "type": "GitHub course project",
+      "members": [
+        "540_reconmend_system"
+      ],
+      "summary": "A neural recommendation experiment that maps user and hotel features into a shared embedding space.",
+      "problem": "Recommendation requires a representation that connects user intent with hotel attributes.",
+      "implementation": "Encodes user and hotel inputs through separate PyTorch towers into normalized 32-dimensional embeddings, with similarity-based ranking and model-evaluation notebooks.",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "pandas",
+        "scikit-learn",
+        "Two-tower models",
+        "Cosine similarity",
+        "Jupyter"
+      ],
+      "bullets": [
+        {
+          "text": "Implemented a two-tower PyTorch recommender encoding user and hotel features into normalized 32-dimensional embeddings for similarity-based retrieval.",
+          "skills": [
+            "python",
+            "pytorch",
+            "recommendation",
+            "embeddings",
+            "retrieval",
+            "machine learning"
+          ]
+        },
+        {
+          "text": "Built feature preprocessing and evaluation notebooks, using batch normalization and dropout in the user and hotel encoders.",
+          "skills": [
+            "pandas",
+            "evaluation",
+            "pytorch",
+            "recommendation",
+            "data pipelines"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Hotel recommender · GitHub",
+          "url": "https://github.com/Baze-Bai/Two-Tower-Hotel-Recommendation",
+          "member": "540_reconmend_system",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "sentence-analysis",
+      "title": "Multitask sentence analysis",
+      "subtitle": "DL_Module2",
+      "category": "Applied ML / DL",
+      "type": "GitHub course project",
+      "members": [
+        "DL_Module2"
+      ],
+      "summary": "Sentence importance regression and memory classification with neural, classical, and rule-based baselines.",
+      "problem": "A memory system needs to distinguish useful statements from incidental conversation.",
+      "implementation": "Uses a RoBERTa backbone with separate regression and classification heads, compares TF-IDF SVM/SVR and keyword baselines, and includes cross-validation and a small FAISS-backed web interface.",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "Transformers",
+        "RoBERTa",
+        "scikit-learn",
+        "SVM",
+        "SVR",
+        "FAISS",
+        "Cross-validation"
+      ],
+      "bullets": [
+        {
+          "text": "Built a multitask RoBERTa model with sentence-importance regression and long-term-memory classification heads, including selective layer freezing and early stopping.",
+          "skills": [
+            "python",
+            "pytorch",
+            "transformers",
+            "nlp",
+            "classification",
+            "regression"
+          ]
+        },
+        {
+          "text": "Compared neural predictions with TF-IDF SVM/SVR and keyword baselines using cross-validation, and added a FAISS-backed sentence-analysis interface.",
+          "skills": [
+            "nlp",
+            "scikit-learn",
+            "faiss",
+            "evaluation",
+            "statistics"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Multitask sentence analysis · GitHub",
+          "url": "https://github.com/Baze-Bai/Multitask-Sentence-Analysis",
+          "member": "DL_Module2",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "aipi561",
+      "title": "Applied NLP and enterprise RAG",
+      "subtitle": "AIPI561_final",
+      "category": "AI systems",
+      "type": "GitHub course integration",
+      "members": [
+        "AIPI561_final"
+      ],
+      "summary": "A course final submission combining sentence analysis with a professional-services document retrieval application.",
+      "problem": "Document QA needs retrieval, application services, evaluation, and controls around user inputs and outputs.",
+      "implementation": "Brings together the DL_Module2 work and a Streamlit/FAISS RAG application with AWS Bedrock, modular configuration, logging, redaction utilities, and tests. This is an integration experience; DL_Module2 is presented separately for its model work.",
+      "technologies": [
+        "Python",
+        "FAISS",
+        "Streamlit",
+        "AWS Bedrock",
+        "Sentence Transformers",
+        "pytest",
+        "Logging",
+        "Input validation"
+      ],
+      "bullets": [
+        {
+          "text": "Integrated a professional-services RAG application using FAISS, Sentence Transformers, Streamlit, and AWS Bedrock as part of an applied AI course final.",
+          "skills": [
+            "python",
+            "rag",
+            "faiss",
+            "aws",
+            "embeddings",
+            "backend"
+          ]
+        },
+        {
+          "text": "Organized configuration, LLM services, logging, redaction utilities, and component tests around the document-QA workflow.",
+          "skills": [
+            "testing",
+            "observability",
+            "rag",
+            "backend",
+            "evaluation"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Applied NLP / enterprise RAG · GitHub",
+          "url": "https://github.com/Baze-Bai/Applied-NLP-and-Enterprise-RAG",
+          "member": "AIPI561_final",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "image-interpolation",
+      "title": "Attention-based image interpolation",
+      "subtitle": "MultiAttention_Unet and 540_Final",
+      "category": "Applied ML / DL",
+      "type": "GitHub project group",
+      "members": [
+        "MultiAttention_Unet",
+        "540_Final"
+      ],
+      "summary": "A comparative image-interpolation project with a multi-frame U-Net, attention, and classical baselines.",
+      "problem": "Predicting an intermediate frame requires combining spatial structure with information from neighboring frames.",
+      "implementation": "Compares averaging and Random Forest regression against a multi-image U-Net with self- and cross-attention, using a Streamlit interface and SSIM/PSNR evaluation. The two repositories represent related versions of this work.",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "U-Net",
+        "Self-attention",
+        "Cross-attention",
+        "scikit-learn",
+        "Streamlit",
+        "SSIM",
+        "PSNR"
+      ],
+      "bullets": [
+        {
+          "text": "Developed multi-frame U-Net interpolation models with self- and cross-attention, comparing predictions against averaging and Random Forest baselines.",
+          "skills": [
+            "python",
+            "pytorch",
+            "computer vision",
+            "attention",
+            "unet",
+            "research"
+          ]
+        },
+        {
+          "text": "Built training and inference utilities with a Streamlit comparison interface and SSIM/PSNR image-quality evaluation.",
+          "skills": [
+            "computer vision",
+            "evaluation",
+            "pytorch",
+            "machine learning"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "MultiAttention U-Net · GitHub",
+          "url": "https://github.com/Baze-Bai/MultiAttention-UNet",
+          "member": "MultiAttention_Unet",
+          "visibility": "public"
+        },
+        {
+          "label": "Image interpolation · GitHub",
+          "url": "https://github.com/Baze-Bai/Attention-Based-Image-Interpolation",
+          "member": "540_Final",
+          "visibility": "public"
+        }
+      ]
+    },
+    {
+      "id": "battery-xai",
+      "title": "Explainable battery capacity prediction",
+      "subtitle": "XAI_ExplainableModel_Battery",
+      "category": "Research",
+      "type": "GitHub research project",
+      "members": [
+        "XAI_ExplainableModel_Battery"
+      ],
+      "summary": "An interpretable deep-learning experiment for battery capacity prediction from multi-temperature impedance data.",
+      "problem": "Prediction alone gives limited insight into which measurement regions drive a battery-health estimate.",
+      "implementation": "Studies a multi-branch 1D CNN on impedance inputs and uses Integrated Gradients to inspect feature contributions, with regression evaluation and visualization notebooks.",
+      "technologies": [
+        "Python",
+        "PyTorch",
+        "Captum",
+        "1D CNN",
+        "Integrated Gradients",
+        "NumPy",
+        "pandas",
+        "SciPy"
+      ],
+      "bullets": [
+        {
+          "text": "Built a multi-branch 1D CNN for capacity regression from multi-temperature electrochemical impedance data using PyTorch.",
+          "skills": [
+            "python",
+            "pytorch",
+            "cnn",
+            "regression",
+            "battery",
+            "machine learning"
+          ]
+        },
+        {
+          "text": "Applied Captum Integrated Gradients to inspect input contributions and analyzed regression behavior with MSE and R-squared evaluation.",
+          "skills": [
+            "explainability",
+            "captum",
+            "evaluation",
+            "battery",
+            "research",
+            "statistics"
+          ]
+        }
+      ],
+      "links": [
+        {
+          "label": "Explainable battery prediction · GitHub",
+          "url": "https://github.com/Baze-Bai/Explainable-Battery-Capacity-Prediction",
+          "member": "XAI_ExplainableModel_Battery",
+          "visibility": "public"
+        }
+      ]
+    }
+  ]
+}
